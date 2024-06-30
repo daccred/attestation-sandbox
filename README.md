@@ -12,6 +12,11 @@
 > > Smart contracts are implemented in Cairo a super-set of Rust [check the /packages/cairo](./packages/cairo/) for more and run the integration test scripts to programmatically interact with the registry contracts
 
 
+
+![src-registry](https://github.com/daccred/attestation-sandbox/assets/8960757/3f596206-ff63-43aa-934a-bcc31fd86b21)
+
+
+
 ## About
 
 Reputation systems rely on attestations across various blockchain networks in Web3. Being able to attest to an activity is a powerful way to prove participation, ownership, or association. This concept has been prevalent with the POAP (Proof of Attendance Protocol) paradigm, and we are now seeing a surge in RWA (Real World Asset) tokenizations, Web3 talent verification, events, community participation, and more.
