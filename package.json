@@ -1,10 +1,33 @@
 {
-  "dependencies": {
-    "dotenv": "^16.4.5",
-    "fs": "^0.0.1-security",
-    "starknet": "^6.6.6"
+  "name": "create-t3-turbo",
+  "private": true,
+  "engines": {
+    "node": ">=20.12.0"
+  },
+  "packageManager": "pnpm@9.2.0",
+  "scripts": {
+    "build": "turbo run build",
+    "clean": "git clean -xdf node_modules",
+    "clean:workspaces": "turbo run clean",
+    "db:push": "turbo -F @attestbox/db push",
+    "db:studio": "turbo -F @attestbox/db studio",
+    "dev": "turbo watch dev",
+    "dev:next": "turbo watch dev -F @attestbox/nextjs...",
+    "format": "turbo run format --continue -- --cache --cache-location node_modules/.cache/.prettiercache",
+    "format:fix": "turbo run format --continue -- --write --cache --cache-location node_modules/.cache/.prettiercache",
+    "lint": "turbo run lint --continue -- --cache --cache-location node_modules/.cache/.eslintcache",
+    "lint:fix": "turbo run lint --continue -- --fix --cache --cache-location node_modules/.cache/.eslintcache",
+    "lint:ws": "pnpm dlx sherif@latest",
+    "postinstall": "pnpm lint:ws",
+    "typecheck": "turbo run typecheck",
+    "ui-add": "turbo run ui-add"
   },
   "devDependencies": {
-    "@types/node": "^20.14.5"
-  }
+    "@attestbox/prettier-config": "workspace:*",
+    "@turbo/gen": "^2.0.3",
+    "prettier": "^3.3.1",
+    "turbo": "^2.0.3",
+    "typescript": "^5.4.5"
+  },
+  "prettier": "@attestbox/prettier-config"
 }

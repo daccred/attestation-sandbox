@@ -1,0 +1,4 @@
+{
+  "extends": "@attestbox/tsconfig/base.json",
+  "include": ["routes"]
+}
