@@ -14,9 +14,9 @@
 
 ## About
 
-Reputation systems rely on attestation, in Web3 across various blockchain networks, being able to attest to an activity is a great way to prove participation, ownership or association. this has been prevalent with the POAP paradigm and we are now seeing a surge in RWA (Real world asset) tokenizations, Talent in Web3, as well as events, community participation etc. 
+Reputation systems rely on attestations across various blockchain networks in Web3. Being able to attest to an activity is a powerful way to prove participation, ownership, or association. This concept has been prevalent with the POAP (Proof of Attendance Protocol) paradigm, and we are now seeing a surge in RWA (Real World Asset) tokenizations, Web3 talent verification, events, community participation, and more.
 
-Attestation registries provide a permissionless / decentralized way to create a `Proof of X` for any usecase that requires proving an affiliation to an activity onchain
+Attestation registries provide a permissionless and decentralized way to create a `Proof of X` for any use case that requires proving an affiliation to an activity on-chain.
 
 
 ## Repository structure
@@ -62,14 +62,21 @@ tooling
 
 > In this repo, we use `@attestbox` as a placeholder for package names. As a user, you might want to replace it with your own organization or project name.
 
+
 ## Quick Start
 
 > **Note**
 > The [db](./packages/db) package is preconfigured to use Supabase and is **edge-bound** with the [Vercel Postgres](https://github.com/vercel/storage/tree/main/packages/postgres) driver. If you're using something else, make the necessary modifications to the [schema](./packages/db/src/schema) as well as the [client](./packages/db/src/index.ts) and the [drizzle config](./packages/db/drizzle.config.ts). If you want to switch to non-edge database driver, remove `export const runtime = "edge";` [from all pages and api routes](https://github.com/t3-oss/create-t3-turbo/issues/634#issuecomment-1730240214).
 
-To get it running, follow the steps below:
 
 ### 1. Setup dependencies
+
+To get it running, follow the steps below:
+
+1. Clone this repository
+2. Follow the README in the `packages/cairo` directory to set up and interact with the smart contracts
+3. Navigate to the `apps/nextjs` directory to work with the schema creation UI
+
 
 ```bash
 # Install dependencies

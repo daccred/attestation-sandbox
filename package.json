@@ -1,5 +1,6 @@
 {
-  "name": "create-t3-turbo",
+  "name": "attestbox",
+  "version": "0.1.0",
   "private": true,
   "engines": {
     "node": ">=20.12.0"
